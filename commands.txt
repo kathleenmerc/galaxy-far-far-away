@@ -1,0 +1,70 @@
+Terminal Lab
+
+Part I: Set the Scene
+1. mkdir death_star
+2. cd death_star
+3. touch darth_vader.txt princess_leia.txt storm_trooper.txt 
+4. cd ..
+5. mkdir tatooine
+6. cd tatooine
+7. touch luke.txt ben_kenobi.txt
+8. mkdir millenium_falcon
+9. cd millenium_falcon
+10. touch hans_solo.txt chewbaca.txt
+
+Part III: rename
+1. cd ..
+2. mv ben_kenobi.txt obi_wan.txt
+
+Part III: copy
+1. cd ..
+2. cd death_star
+3. cp storm_trooper.txt ../tatooine
+
+Part IV: move
+1. mv luke.txt millenium_falcon
+2. mv obi_wan.txt millenium_falcon 
+3. mv millenium_falcon ..
+4. cd ..
+5. mv millenium_falcon death_star 
+6. cd death_star 
+7. mv princess_leia.txt millenium_falcon 
+
+Part V: remove
+1. cd millenium_falcon
+2. rm obi_wan.txt
+
+Part VI: all together
+1. cd ../../
+2. mkdir yavin_4
+3. cd death_star
+4. mv millenium_falcon ../yavin_4
+5. cd ..
+6. cd yavin_4
+7. mkdir x_wing
+8. cd millenium_falcon
+9. mv princess_leia.txt ..
+10. mv luke.txt ../x_wing
+11. cd ..
+12. mv millenium_falcon .. && mv x_wing ..
+13. cd ..
+14. cd death_star
+15. mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+16. mv darth_vader.txt tie_fighter_1
+17. cp storm_trooper.txt tie_fighter_2 && cp storm_trooper.txt tie_fighter_3
+18. mv tie_fighter_1 ..
+19. mv tie_fighter_2 ..
+20. mv tie_fighter_3 ..
+
+Part VII: remove directories and everything they contain
+1. cd ..
+2. rm -r tie_fighter_2
+3. rm -r tie_fighter_3
+
+Part VIII:
+1. cd x_wing
+2. touch the_force.txt
+3. cd ..
+4. rm -r death_star
+5. mv x_wing yavin_4 && mv millenium_falcon yavin_4 
+6. 
